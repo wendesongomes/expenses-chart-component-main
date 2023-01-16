@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.container-balance{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+}
+
+.container-balance .balance-info p{ 
+    color: white; 
+    font-size: 0.8em;
+}
+
+.container-balance .balance-info p:nth-child(2){ 
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container-balance div:nth-child(2){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(25, 47%, 15%);
+}
+
+.container-balance div:nth-child(2)::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+    right: 20px;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+.container-info{
+    margin-top: 20px;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-info #container-graphics{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.container-info #container-graphics .days:nth-child(1) .graphics{ height: 40px; }
+.container-info #container-graphics .days:nth-child(2) .graphics{ height: 70px; }
+.container-info #container-graphics .days:nth-child(3) .graphics{ height: 110px;}
+.container-info #container-graphics .days:nth-child(4) .graphics{ height: 60px; }
+.container-info #container-graphics .days:nth-child(5) .graphics{ height: 50px; }
+.container-info #container-graphics .days:nth-child(6) .graphics{ height: 90px; }
+.container-info #container-graphics .days:nth-child(7) .graphics{ height: 50px; }
+
+.container-info #container-graphics .days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(28, 10%, 53%);
+}
+
+.container-info #container-graphics .graphics-value{
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.container-info #container-graphics #container-mon, #container-tue, #container-wed, #container-thu, #container-fri, #container-sat, #container-sun{ opacity: 0; }
+
+
+.container-info #container-graphics .days .graphics{
+    width: 40px;
+    height: 20px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.container-info #container-graphics .days .graphics:hover{ background-color: hsl(186, 34%, 60%);}
+
+.container-info #container-graphics .days p{
+    font-size: 0.8em;
+}
+
+span{
+    width: 360px;
+    height: 2px;
+    background-color: hsl(27, 66%, 92%);
+}
+
+.container-info-month{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-info-month .container-total-month p:nth-child(1){
+    color: hsl(28, 10%, 53%);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.container-info-month .container-total-month p:nth-child(2){
+    color: hsl(25, 47%, 15%);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.container-info-month .container-last-month p:nth-child(1){
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
+}
+
+.container-info-month .container-last-month p:nth-child(2){
+    font-size: 0.9em;
+    color: hsl(28, 10%, 53%);
+}
+
+
